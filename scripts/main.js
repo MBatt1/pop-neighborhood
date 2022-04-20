@@ -50,6 +50,7 @@ window.onload = fillGrid;
 function windowResize() {
   canvas.width  = window.innerWidth;
   canvas.height = window.innerHeight;
+  fillGrid();
 };
 
-window.addEventListener('resize', fillGrid);
+window.addEventListener('resize', windowResize);
