@@ -13,7 +13,7 @@
    version="1.1"
    id="svg157"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="house_tile.svg">
+   sodipodi:docname="curved_road_3_tile.svg">
   <defs
      id="defs151" />
   <sodipodi:namedview
@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="159.0016"
-     inkscape:cy="129.03252"
+     inkscape:zoom="2.8"
+     inkscape:cx="74.061493"
+     inkscape:cy="176.65623"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -53,28 +53,15 @@
      inkscape:groupmode="layer"
      id="layer1">
     <polygon
-       transform="matrix(0.2638438,0,0,-0.26384531,-95.738284,139.93557)"
-       style="fill:#32cd32;stroke:#231f20;stroke-width:0.2507px;stroke-miterlimit:10"
+       id="polygon60"
+       points="363.14,279.67 463.14,329.67 563.14,279.67 463.14,229.67 "
        class="cls-6"
-       points="463.14,329.67 563.14,279.67 463.14,229.67 363.14,279.67 "
-       id="polygon60-4" />
-    <polygon
-       id="polygon46"
-       points="563.14,184.67 563.14,264.67 493.14,229.67 493.14,149.67 528.14,127.17 "
-       class="cls-3"
-       style="fill:#f7941d;stroke-width:1.0028"
-       transform="matrix(0.2638438,0,0,0.26384531,-122.12267,5.5486027)" />
-    <polygon
-       id="polygon48"
-       points="563.14,184.67 528.14,127.17 598.14,92.17 633.14,149.67 "
-       class="cls-8"
-       style="fill:#f15a29;stroke-width:1.0028"
-       transform="matrix(0.2638438,0,0,0.26384531,-122.12267,5.5486027)" />
-    <polygon
-       id="polygon50"
-       points="633.14,149.67 633.14,229.67 563.14,264.67 563.14,184.67 "
-       class="cls-4"
-       style="fill:#ef4136;stroke-width:1.0028"
-       transform="matrix(0.2638438,0,0,0.26384531,-122.12267,5.5486027)" />
+       style="fill:#32cd32;stroke:#231f20;stroke-width:0.2507px;stroke-miterlimit:10"
+       transform="matrix(0.2638438,0,0,-0.26384531,-95.738285,139.93557)" />
+    <path
+       style="fill:#a9a9a9;stroke:#231f20;stroke-width:0.0661458;stroke-miterlimit:10;stroke-dasharray:none"
+       class="cls-10"
+       d="m 2.6458397,67.508412 c 13.1497913,-6.577542 34.4725633,-6.577542 47.6250013,0 L 29.104174,78.091745 c -1.463146,-0.73025 -3.831168,-0.73025 -5.291668,0 z"
+       id="path144" />
   </g>
 </svg>
