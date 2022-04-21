@@ -42,7 +42,7 @@ function advanceDraw() {
         var front = frontier.pop();
         var frontTile = tiles[grid[front.y][front.x]];
         if (!frontTile) {
-            grid[front.y][front.x] = 9;
+            grid[front.y][front.x] = 99;
             //clearInterval(ticker);
             //ticker = null;
             drawGrid();
@@ -118,16 +118,16 @@ function tileFits(coords, tileIndex) {
 	var downLeft = getDownLeft(coords);
 	var downRight = getDownRight(coords);
 	
-	if (!(getTile(grid, upLeft) == -1 || getTile(grid, upLeft) == 9 || tiles[tileIndex].validConnections.u1.includes(getTile(grid, upLeft)))) {
+	if (!(getTile(grid, upLeft) == -1 || getTile(grid, upLeft) == 99 || tiles[tileIndex].validConnections.u1.includes(getTile(grid, upLeft)))) {
 		return false;
 	}
-	if (!(getTile(grid, upRight) == -1 || getTile(grid, upRight) == 9 || tiles[tileIndex].validConnections.u2.includes(getTile(grid, upRight)))) {
+	if (!(getTile(grid, upRight) == -1 || getTile(grid, upRight) == 99 || tiles[tileIndex].validConnections.u2.includes(getTile(grid, upRight)))) {
 		return false;
 	}
-	if (!(getTile(grid, downLeft) == -1 || getTile(grid, downLeft) == 9 || tiles[tileIndex].validConnections.d1.includes(getTile(grid, downLeft)))) {
+	if (!(getTile(grid, downLeft) == -1 || getTile(grid, downLeft) == 99 || tiles[tileIndex].validConnections.d1.includes(getTile(grid, downLeft)))) {
 		return false;
 	}
-	if (!(getTile(grid, downRight) == -1 || getTile(grid, downRight) == 9 || tiles[tileIndex].validConnections.d2.includes(getTile(grid, downRight)))) {
+	if (!(getTile(grid, downRight) == -1 || getTile(grid, downRight) == 99 || tiles[tileIndex].validConnections.d2.includes(getTile(grid, downRight)))) {
 		return false;
 	}
 	return true;
@@ -192,18 +192,39 @@ function getTile(fromGrid, coords) {
 
 // {u1:[], u2:[], d1:[], d2:[]}
 function populateTiles() {
-    tiles[0] = createImage("0_blank_tile", {u1:[0, 1, 2, 4, 5, 7], u2:[0, 1, 2, 3, 6, 7], d1:[0, 1, 2, 3, 5, 8], d2:[0, 1, 2, 4, 6, 8]});
-    tiles[1] = createImage("1_house_tile", {u1:[0, 1, 2, 4, 5, 7], u2:[0, 1, 2, 3, 6, 7], d1:[0, 1, 2, 3, 5, 8], d2:[0, 1, 2, 4, 6, 8]});
-    tiles[2] = createImage("2_house2_tile", {u1:[0, 1, 2, 4, 5, 7], u2:[0, 1, 2, 3, 6, 7], d1:[0, 1, 2, 3, 5, 8], d2:[0, 1, 2, 4, 6, 8]});
     
-    tiles[3] = createImage("3_straight_road_1_tile", {u1: [3, 6, 8], u2:[0, 1, 2, 3, 6, 7], d1:[0, 1, 2, 3, 5, 8], d2:[3, 5, 7]});  // 
-    tiles[4] = createImage("4_straight_road_2_tile", {u1: [0, 1, 2, 4, 7], u2:[4, 5, 8], d1:[4, 6, 7], d2:[0, 1, 2, 4, 6, 8]});  // /
+    var upLeftRoad = [3, 6, 8, 9];
+    var upLeftGrass = [0, 1, 2, 4, 5, 7];
+    var upRightRoad = [4, 5, 8, 9];
+    var upRightGrass = [0, 1, 2, 3, 6, 7];
     
-    tiles[5] = createImage("5_curved_road_1_tile", {u1: [3, 6, 8], u2:[0, 1, 2, 3, 6, 7], d1:[4, 6, 7], d2:[0, 1, 2, 4, 6, 8]});    // >
-    tiles[6] = createImage("6_curved_road_2_tile", {u1: [0, 1, 2, 4, 7], u2:[4, 5, 8], d1:[0, 1, 2, 3, 5, 8], d2:[3, 5, 7]});    // <
-    tiles[7] = createImage("7_curved_road_3_tile", {u1: [3, 6, 8], u2:[4, 5, 8], d1:[0, 1, 2, 3, 5, 8], d2:[0, 1, 2, 4, 6, 8]});    // v
-    tiles[8] = createImage("8_curved_road_4_tile", {u1: [0, 1, 2, 4, 7], u2:[0, 1, 2, 3, 6, 7], d1:[4, 6, 7], d2:[3, 5, 7]});    // ^
-    tiles[9] = createImage("bad_tile", {u1:[], u2:[], d1:[], d2:[]});
+    var downLeftRoad = [4, 6, 7, 9];
+    var downLeftGrass = [0, 1, 2, 3, 5, 8];
+    var downRightRoad = [3, 5, 7, 9];
+    var downRightGrass = [0, 1, 2, 4, 6, 8];
+    
+    
+    
+    tiles[0] = createImage("0_blank_tile", {u1:upLeftGrass, u2:upRightGrass, d1:downLeftGrass, d2:downRightGrass});
+    tiles[1] = createImage("1_house_tile", {u1:upLeftGrass, u2:upRightGrass, d1:downLeftGrass, d2:downRightGrass});
+    tiles[2] = createImage("2_house2_tile", {u1:upLeftGrass, u2:upRightGrass, d1:downLeftGrass, d2:downRightGrass});
+    
+    tiles[3] = createImage("3_straight_road_1_tile", {u1: upLeftRoad, u2:upRightGrass, d1:downLeftGrass, d2:downRightRoad});  // 
+    tiles[4] = createImage("4_straight_road_2_tile", {u1: upLeftGrass, u2:upRightRoad, d1:downLeftRoad, d2:downRightGrass});  // /
+    
+    tiles[5] = createImage("5_curved_road_1_tile", {u1: upLeftRoad, u2:upRightGrass, d1:downLeftRoad, d2:downRightGrass});    // >
+    tiles[6] = createImage("6_curved_road_2_tile", {u1: upLeftGrass, u2:upRightRoad, d1:downLeftGrass, d2:downRightRoad});    // <
+    tiles[7] = createImage("7_curved_road_3_tile", {u1: upLeftRoad, u2:upRightRoad, d1:downLeftGrass, d2:downRightGrass});    // v
+    tiles[8] = createImage("8_curved_road_4_tile", {u1: upLeftGrass, u2:upRightGrass, d1:downLeftRoad, d2:downRightRoad});    // ^
+    
+    tiles[9] = createImage("9_fourway_road_tile", {u1: [3, 6, 8], u2:[4, 5, 8], d1:[4, 6, 7], d2:[3, 5, 7]});  // /
+    
+    tiles[10] = createImage("10_t_road_1_tile", {u1: upLeftRoad, u2:upRightGrass, d1:downLeftRoad, d2:downRightGrass});
+    tiles[11] = createImage("11_t_road_2_tile", {u1: upLeftGrass, u2:upRightRoad, d1:downLeftGrass, d2:downRightRoad});
+    tiles[12] = createImage("12_t_road_3_tile", {u1: upLeftRoad, u2:upRightRoad, d1:downLeftGrass, d2:downRightGrass});
+    tiles[13] = createImage("13_t_road_4_tile", {u1: upLeftGrass, u2:upRightGrass, d1:downLeftRoad, d2:downRightRoad});
+    
+    tiles[99] = createImage("bad_tile", {u1:[], u2:[], d1:[], d2:[]});
 }
 
 // Retrieve an image from a file path
