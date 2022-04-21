@@ -8,6 +8,7 @@ var tiles = [];
 var grid = [];
 var frontier = [];
 
+var ticker = null;
 
 // Fill the grid with tiles
 function fillGrid() {
@@ -17,22 +18,22 @@ function fillGrid() {
 
     grid = [];
     // fill grid with emptys
-    for (var yPlace = 0; yPlace < screenTileHeight; yPlace++) {
+    for (var yPlace = 0; yPlace < screenTileHeight+1; yPlace++) {
         var temp = [];
-        for (var xPlace = 0; xPlace < screenTileWidth; xPlace++) {
+        for (var xPlace = 0; xPlace < screenTileWidth+1; xPlace++) {
             temp[xPlace] = -1;
         }
         grid[yPlace] = temp;
     }
     
-    var startX = 4; //Math.floor(Math.random() * screenTileWidth);
-    var startY = 12; //Math.floor(Math.random() * screenTileHeight);
+    var startX = Math.floor(Math.random() * screenTileWidth);
+    var startY = Math.floor(Math.random() * screenTileHeight);
 
     frontier = [{x:startX, y:startY}]
 	grid[startY][startX] = 0;
     
    
-    var ticker = setInterval(advanceDraw, 200);
+    ticker = setInterval(advanceDraw, 100);
     
 };
 
@@ -40,74 +41,71 @@ function advanceDraw() {
 	if (frontier.length > 0) {
         var front = frontier.pop();
         var frontTile = tiles[grid[front.y][front.x]];
+        if (!frontTile) {
+            grid[front.y][front.x] = 9;
+            //clearInterval(ticker);
+            //ticker = null;
+            drawGrid();
+            return;
+        }
         
 		var upLeft = getUpLeft(front);
 		var upRight = getUpRight(front);
 		var downLeft = getDownLeft(front);
 		var downRight = getDownRight(front);
 		
-		var newt = "";
-		
 		if (grid[upLeft.y] && grid[upLeft.y][upLeft.x] && getTile(grid, upLeft) == -1) {
-			var newTiles = frontTile.validConnections.u1;
+            frontier.push({x:upLeft.x, y:upLeft.y});
+			var newTiles = [...frontTile.validConnections.u1];
 			newTiles.sort(() => Math.random() - 0.5);
 			var foundTile = null;
 			while (!foundTile && newTiles.length > 0) {
 				var temp = newTiles.pop();
 				if (tileFits(upLeft, temp)) {
 					grid[upLeft.y][upLeft.x] = temp;
-					newt += temp + " ";
 					foundTile = true;
-					frontier.push({x:upLeft.x, y:upLeft.y});
 				}
 			}
 		}
 		if (grid[upRight.y] && grid[upRight.y][upRight.x] && getTile(grid, upRight) == -1) {
-			
-			var newTiles = frontTile.validConnections.u2;
+			frontier.push({x:upRight.x, y:upRight.y});
+			var newTiles = [...frontTile.validConnections.u2];
 			newTiles.sort(() => Math.random() - 0.5);
 			var foundTile = null;
 			while (!foundTile && newTiles.length > 0) {
 				var temp = newTiles.pop();
 				if (tileFits(upRight, temp)) {
 					grid[upRight.y][upRight.x] = temp;
-					newt += temp + " ";
 					foundTile = true;
-					frontier.push({x:upRight.x, y:upRight.y});
 				}
 			}
 		}
 		if (grid[downLeft.y] && grid[downLeft.y][downLeft.x] && getTile(grid, downLeft) == -1) {
-			
-			var newTiles = frontTile.validConnections.d1;
+			frontier.push({x:downLeft.x, y:downLeft.y});
+			var newTiles = [...frontTile.validConnections.d1];
 			newTiles.sort(() => Math.random() - 0.5);
 			var foundTile = null;
 			while (!foundTile && newTiles.length > 0) {
 				var temp = newTiles.pop();
 				if (tileFits(downLeft, temp)) {
 					grid[downLeft.y][downLeft.x] = temp;
-					newt += temp + " ";
 					foundTile = true;
-					frontier.push({x:downLeft.x, y:downLeft.y});
 				}
 			}
 		}
 		if (grid[downRight.y] && grid[downRight.y][downRight.x] && getTile(grid, downRight) == -1) {
-			
-			var newTiles = frontTile.validConnections.d2;
+			frontier.push({x:downRight.x, y:downRight.y});
+			var newTiles = [...frontTile.validConnections.d2];
 			newTiles.sort(() => Math.random() - 0.5);
 			var foundTile = null;
 			while (!foundTile && newTiles.length > 0) {
 				var temp = newTiles.pop();
 				if (tileFits(downRight, temp)) {
 					grid[downRight.y][downRight.x] = temp;
-					newt += temp + " ";
 					foundTile = true;
-					frontier.push({x:downRight.x, y:downRight.y});
 				}
 			}
 		}
-		//alert(newt);
 		frontier.sort(() => Math.random() - 0.5);
 		
 		drawGrid();
@@ -119,18 +117,17 @@ function tileFits(coords, tileIndex) {
 	var upRight = getUpRight(coords);
 	var downLeft = getDownLeft(coords);
 	var downRight = getDownRight(coords);
-	//alert(tileIndex);
 	
-	if (!(getTile(grid, upLeft) == -1 || tiles[tileIndex].validConnections.u1.includes(getTile(grid, upLeft)))) {
+	if (!(getTile(grid, upLeft) == -1 || getTile(grid, upLeft) == 9 || tiles[tileIndex].validConnections.u1.includes(getTile(grid, upLeft)))) {
 		return false;
 	}
-	if (!(getTile(grid, upRight) == -1 || tiles[tileIndex].validConnections.u2.includes(getTile(grid, upRight)))) {
+	if (!(getTile(grid, upRight) == -1 || getTile(grid, upRight) == 9 || tiles[tileIndex].validConnections.u2.includes(getTile(grid, upRight)))) {
 		return false;
 	}
-	if (!(getTile(grid, downLeft) == -1 || tiles[tileIndex].validConnections.d1.includes(getTile(grid, downLeft)))) {
+	if (!(getTile(grid, downLeft) == -1 || getTile(grid, downLeft) == 9 || tiles[tileIndex].validConnections.d1.includes(getTile(grid, downLeft)))) {
 		return false;
 	}
-	if (!(getTile(grid, downRight) == -1 || tiles[tileIndex].validConnections.d2.includes(getTile(grid, downRight)))) {
+	if (!(getTile(grid, downRight) == -1 || getTile(grid, downRight) == 9 || tiles[tileIndex].validConnections.d2.includes(getTile(grid, downRight)))) {
 		return false;
 	}
 	return true;
@@ -206,6 +203,7 @@ function populateTiles() {
     tiles[6] = createImage("6_curved_road_2_tile", {u1: [0, 1, 2, 4, 7], u2:[4, 5, 8], d1:[0, 1, 2, 3, 5, 8], d2:[3, 5, 7]});    // <
     tiles[7] = createImage("7_curved_road_3_tile", {u1: [3, 6, 8], u2:[4, 5, 8], d1:[0, 1, 2, 3, 5, 8], d2:[0, 1, 2, 4, 6, 8]});    // v
     tiles[8] = createImage("8_curved_road_4_tile", {u1: [0, 1, 2, 4, 7], u2:[0, 1, 2, 3, 6, 7], d1:[4, 6, 7], d2:[3, 5, 7]});    // ^
+    tiles[9] = createImage("bad_tile", {u1:[], u2:[], d1:[], d2:[]});
 }
 
 // Retrieve an image from a file path
