@@ -1,41 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    sodipodi:docname="fourway_road_tile.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
    id="svg157"
    version="1.1"
    viewBox="0 0 52.916665 79.375002"
    height="300"
-   width="200">
+   width="200"
+   inkscape:export-filename="C:\Github\pop-neighborhood\tiles\9_fourway_road_tile.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs151" />
   <sodipodi:namedview
      units="px"
      inkscape:window-maximized="1"
-     inkscape:window-y="-8"
-     inkscape:window-x="-8"
-     inkscape:window-height="1057"
-     inkscape:window-width="1920"
+     inkscape:window-y="-6"
+     inkscape:window-x="-6"
+     inkscape:window-height="890"
+     inkscape:window-width="1368"
      showgrid="false"
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
-     inkscape:cy="255.00462"
-     inkscape:cx="190.67037"
+     inkscape:cy="254.81098"
+     inkscape:cx="190.66629"
      inkscape:zoom="1.979899"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
      bordercolor="#666666"
      pagecolor="#ffffff"
-     id="base" />
+     id="base"
+     inkscape:pagecheckerboard="0" />
   <metadata
      id="metadata154">
     <rdf:RDF>
@@ -44,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -54,14 +58,14 @@
      inkscape:label="Layer 1">
     <polygon
        transform="matrix(-0.2638438,0,0,0.26384531,148.65495,-7.6436634)"
-       style="fill:#32cd32;stroke:#231f20;stroke-width:0.2507px;stroke-miterlimit:10"
+       style="fill:#32cd32;stroke:none;stroke-width:0.2507px;stroke-miterlimit:10"
        class="cls-6"
        points="563.14,279.67 463.14,229.67 363.14,279.67 463.14,329.67 "
        id="polygon60" />
     <path
        transform="scale(0.26458333)"
        d="M 90.021484 205.12891 L 10.201172 245.03906 L 20.177734 250.02734 L 10.201172 255.01562 L 90.021484 294.92578 L 100 289.9375 L 109.97852 294.92578 L 189.79883 255.01562 L 179.82227 250.02734 L 189.79883 245.03906 L 109.97852 205.12891 L 100 210.11719 L 90.021484 205.12891 z "
-       style="fill:#a9a9a9;stroke:#231f20;stroke-width:0.25;stroke-miterlimit:10;stroke-dasharray:none"
+       style="fill:#a9a9a9;stroke:none;stroke-width:0.25;stroke-miterlimit:10;stroke-dasharray:none"
        id="polygon120" />
     <rect
        y="58.331573"
