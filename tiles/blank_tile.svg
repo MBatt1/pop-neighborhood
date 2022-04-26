@@ -7,7 +7,7 @@
    id="svg157"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
    sodipodi:docname="blank_tile.svg"
-   inkscape:export-filename="C:\Github\pop-neighborhood\tiles\0_blank_tile.png"
+   inkscape:export-filename="C:\Github\pop-neighborhood\tiles\25_blank_tile.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="-4.6428571"
-     inkscape:cy="200.35714"
+     inkscape:zoom="0.35"
+     inkscape:cx="204.28571"
+     inkscape:cy="-44.285714"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -56,11 +56,213 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <ellipse
+       style="fill:#006300;fill-opacity:1;stroke-width:0.288971"
+       id="path1680-3"
+       cx="36.954063"
+       cy="39.422253"
+       rx="8.8319378"
+       ry="6.6394973" />
+    <ellipse
+       style="fill:#006300;fill-opacity:1;stroke-width:0.158219"
+       id="path1109"
+       cx="-47.494061"
+       cy="46.915394"
+       rx="5.7686529"
+       ry="4.0489769" />
     <polygon
        id="polygon60"
-       points="463.14,329.67 563.14,279.67 463.14,229.67 363.14,279.67 "
+       points="463.14,229.67 363.14,279.67 463.14,329.67 563.14,279.67 "
        class="cls-6"
        style="fill:#32cd32;stroke:none;stroke-width:0.2507px;stroke-miterlimit:10"
-       transform="matrix(0.2638438,0,0,0.26384531,-95.738284,-7.6436634)" />
+       transform="matrix(0.2638438,0,0,0.26384531,-254.63632,-7.6436634)" />
+    <polygon
+       id="polygon60-9"
+       points="463.14,229.67 363.14,279.67 463.14,329.67 563.14,279.67 "
+       class="cls-6"
+       style="fill:#32cd32;stroke:none;stroke-width:0.2507px;stroke-miterlimit:10"
+       transform="matrix(0.2638438,0,0,0.26384531,-175.26119,-7.6436634)" />
+    <path
+       sodipodi:type="star"
+       style="fill:#c87137"
+       id="path869"
+       inkscape:flatsided="true"
+       sodipodi:sides="3"
+       sodipodi:cx="400.00049"
+       sodipodi:cy="299.86099"
+       sodipodi:r1="96.65535"
+       sodipodi:r2="48.327675"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-0.52359878"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 400.00049,203.20564 83.70599,144.98303 -167.41198,0 z"
+       transform="matrix(0.04314291,0,0,0.16432361,-70.321765,8.9303354)"
+       inkscape:transform-center-y="-3.970689"
+       inkscape:transform-center-x="1.5959907e-06" />
+    <ellipse
+       style="fill:#006300;fill-opacity:1;stroke-width:0.140944"
+       id="path1091"
+       cx="-52.441986"
+       cy="50.513012"
+       rx="6.5071387"
+       ry="3.0840173" />
+    <ellipse
+       style="fill:#008000;stroke-width:0.140944"
+       id="path1105"
+       cx="-53.300514"
+       cy="45.969368"
+       rx="6.7536201"
+       ry="5.3970304" />
+    <ellipse
+       style="fill:#008000;stroke-width:0.140944"
+       id="path1111"
+       cx="-53.63953"
+       cy="43.613323"
+       rx="8.725482"
+       ry="6.8362379" />
+    <polygon
+       id="polygon60-9-6"
+       points="463.14,229.67 363.14,279.67 463.14,329.67 563.14,279.67 "
+       class="cls-6"
+       style="fill:#32cd32;stroke:none;stroke-width:0.2507px;stroke-miterlimit:10"
+       transform="matrix(0.2638438,0,0,0.26384531,-16.511187,-7.6436626)" />
+    <polygon
+       id="polygon60-9-4"
+       points="463.14,229.67 363.14,279.67 463.14,329.67 563.14,279.67 "
+       class="cls-6"
+       style="fill:#32cd32;stroke:none;stroke-width:0.2507px;stroke-miterlimit:10"
+       transform="matrix(0.2638438,0,0,0.26384531,-95.886192,-7.6436634)" />
+    <path
+       sodipodi:type="star"
+       style="fill:#c87137"
+       id="path869-1"
+       inkscape:flatsided="true"
+       sodipodi:sides="3"
+       sodipodi:cx="400.00049"
+       sodipodi:cy="299.86099"
+       sodipodi:r1="96.65535"
+       sodipodi:r2="48.327675"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-0.52359878"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       transform="matrix(0.061205,0,0,0.2654768,1.8283926,-26.290061)"
+       inkscape:transform-center-y="-6.4149405"
+       d="m 400.00049,203.20564 83.70599,144.98303 -167.41198,0 z" />
+    <ellipse
+       style="fill:#008000;stroke-width:0.211752"
+       id="path1105-1"
+       cx="29.906914"
+       cy="37.903255"
+       rx="10.619336"
+       ry="7.7473836" />
+    <ellipse
+       style="fill:#006300;fill-opacity:1;stroke-width:0.288971"
+       id="path1690"
+       cx="28.870064"
+       cy="42.210152"
+       rx="10.21877"
+       ry="6.5665355" />
+    <ellipse
+       style="fill:#008000;stroke-width:0.273277"
+       id="path1680"
+       cx="38.42244"
+       cy="36.943504"
+       rx="8.8319378"
+       ry="5.9379148" />
+    <ellipse
+       style="fill:#008000;stroke-width:0.324244"
+       id="path1684"
+       cx="23.320534"
+       cy="39.890347"
+       rx="14.014315"
+       ry="6.430222" />
+    <ellipse
+       style="fill:#008000;stroke-width:0.360608"
+       id="path1686"
+       cx="26.727028"
+       cy="33.917114"
+       rx="12.730639"
+       ry="6.7124591" />
+    <ellipse
+       style="fill:#008000;stroke-width:0.264583"
+       id="path2781"
+       cx="114.35983"
+       cy="63.613396"
+       rx="2.5513394"
+       ry="3.96875" />
+    <ellipse
+       style="fill:#008000;stroke-width:0.264583"
+       id="path2788"
+       cx="98.503754"
+       cy="66.240326"
+       rx="3.5907736"
+       ry="2.7403271" />
+    <ellipse
+       style="fill:#008000;stroke-width:0.289593"
+       id="path2790"
+       cx="108.10501"
+       cy="63.912361"
+       rx="2.8300731"
+       ry="3.5907736" />
+    <ellipse
+       style="fill:#008000;stroke-width:0.264583"
+       id="path2790-48"
+       cx="110.97696"
+       cy="66.429314"
+       rx="2.3623512"
+       ry="3.5907736" />
+    <polygon
+       id="polygon60-9-6-3"
+       points="463.14,229.67 363.14,279.67 463.14,329.67 563.14,279.67 "
+       class="cls-6"
+       style="fill:#32cd32;stroke:none;stroke-width:0.2507px;stroke-miterlimit:10"
+       transform="matrix(0.2638438,0,0,0.26384531,62.8638,-7.6436626)" />
+    <ellipse
+       style="fill:#008000;stroke-width:0.227028"
+       id="path2779-4"
+       cx="-181.01596"
+       cy="62.838539"
+       rx="3.4017856"
+       ry="6.3311009"
+       transform="scale(-1,1)" />
+    <ellipse
+       style="fill:#008000;stroke-width:0.264583"
+       id="path2781-1"
+       cx="-176.76373"
+       cy="65.578873"
+       rx="2.5513394"
+       ry="3.96875"
+       transform="scale(-1,1)" />
+    <ellipse
+       style="fill:#008000;stroke-width:0.264583"
+       id="path2788-4"
+       cx="-193.67816"
+       cy="66.618301"
+       rx="3.5907736"
+       ry="2.7403271"
+       transform="scale(-1,1)" />
+    <ellipse
+       style="fill:#008000;stroke-width:0.264583"
+       id="path2777"
+       cx="102.75598"
+       cy="62.838543"
+       rx="3.6852679"
+       ry="4.0632439" />
+    <ellipse
+       style="fill:#008000;stroke-width:0.264583"
+       id="path2783"
+       cx="106.44125"
+       cy="67.46875"
+       rx="3.96875"
+       ry="3.0238097" />
+    <ellipse
+       style="fill:#008000;stroke-width:0.140944"
+       id="path1089"
+       cx="-60.756275"
+       cy="48.60799"
+       rx="5.9155803"
+       ry="4.2662239" />
   </g>
 </svg>

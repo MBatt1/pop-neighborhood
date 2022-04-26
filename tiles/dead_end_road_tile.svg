@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="200"
+   height="300"
+   viewBox="0 0 52.916665 79.375002"
+   version="1.1"
+   id="svg157"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="dead_end_road_tile.svg"
+   inkscape:export-filename="C:\Github\pop-neighborhood\tiles\19_dead_end_road_tile.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs151" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.112776"
+     inkscape:cx="201.74771"
+     inkscape:cy="362.60668"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1368"
+     inkscape:window-height="890"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     units="px"
+     inkscape:pagecheckerboard="0"
+     showguides="false" />
+  <metadata
+     id="metadata154">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2814"
+       transform="translate(6.3999989e-8,-52.916658)">
+      <polygon
+         id="polygon60-8"
+         points="363.14,279.67 463.14,329.67 563.14,279.67 463.14,229.67 "
+         class="cls-6"
+         style="fill:#32cd32;stroke:none;stroke-width:0.2507px;stroke-miterlimit:10"
+         transform="matrix(-0.2638438,0,0,-0.26384531,148.65495,192.85223)" />
+      <path
+         id="polygon120-1-3"
+         style="fill:#a9a9a9;stroke:none;stroke-width:0.0661458;stroke-miterlimit:10;stroke-dasharray:none"
+         class="cls-10"
+         d="m 29.098477,130.93488 21.119124,-10.55956 -5.265828,-2.63291 -5.265829,-2.63292 -5.265828,-2.63291 -5.265829,-2.63292 -21.1191238,10.55957 5.2658278,2.63291 5.26583,2.63291 5.265827,2.63292 z" />
+      <rect
+         style="fill:#e6e6e6;stroke-width:0.264583"
+         id="rect1678-8"
+         width="0.8504464"
+         height="7.8902521"
+         x="14.920272"
+         y="112.6664" />
+      <rect
+         style="fill:#e6e6e6;stroke-width:0.264583"
+         id="rect1678-9-1"
+         width="0.8504464"
+         height="7.8902521"
+         x="28.149441"
+         y="106.02819" />
+      <path
+         id="polygon120-9"
+         style="fill:#ffffff;stroke:none;stroke-width:0.0571932;stroke-miterlimit:10;stroke-dasharray:none"
+         class="cls-10"
+         d="m 30.46716,107.633 -18.260711,9.13035 1.200163,0.60008 18.260711,-9.13035 z m 0,1.6014 -18.260711,9.13036 1.200163,0.60008 18.260711,-9.13035 z m 0,1.64699 -18.260711,9.13035 1.200163,0.60008 18.260711,-9.13035 z" />
+      <ellipse
+         style="fill:#ff0000;stroke-width:0.264583"
+         id="path1861-9"
+         cx="15.35002"
+         cy="112.85809"
+         rx="0.42974886"
+         ry="0.42974883" />
+      <ellipse
+         style="fill:#ff0000;stroke-width:0.264583"
+         id="path1861-3-4"
+         cx="28.541889"
+         cy="106.25488"
+         rx="0.42974886"
+         ry="0.42974883" />
+    </g>
+    <g
+       id="g2823"
+       transform="translate(6.3999989e-8,-52.916658)">
+      <polygon
+         id="polygon60-8-0"
+         points="463.14,329.67 563.14,279.67 463.14,229.67 363.14,279.67 "
+         class="cls-6"
+         style="fill:#32cd32;stroke:none;stroke-width:0.2507px;stroke-miterlimit:10"
+         transform="matrix(0.2638438,0,0,-0.26384531,-16.363153,192.85223)" />
+      <path
+         id="polygon120-1-3-6"
+         style="fill:#a9a9a9;stroke:none;stroke-width:0.0661458;stroke-miterlimit:10;stroke-dasharray:none"
+         class="cls-10"
+         d="m 103.19332,130.93488 -21.119124,-10.55956 5.265828,-2.63291 5.265829,-2.63292 5.265828,-2.63291 5.265829,-2.63292 21.11912,10.55957 -5.26582,2.63291 -5.26583,2.63291 -5.26583,2.63292 z" />
+      <rect
+         style="fill:#e6e6e6;stroke-width:0.264583"
+         id="rect1678-8-2"
+         width="0.8504464"
+         height="7.8902521"
+         x="-117.37152"
+         y="112.6664"
+         transform="scale(-1,1)" />
+      <rect
+         style="fill:#e6e6e6;stroke-width:0.264583"
+         id="rect1678-9-1-0"
+         width="0.8504464"
+         height="7.8902521"
+         x="-104.14236"
+         y="106.02819"
+         transform="scale(-1,1)" />
+      <path
+         id="polygon120-9-2"
+         style="fill:#ffffff;stroke:none;stroke-width:0.0571932;stroke-miterlimit:10;stroke-dasharray:none"
+         class="cls-10"
+         d="m 101.82464,107.633 18.26071,9.13035 -1.20017,0.60008 -18.26071,-9.13035 z m 0,1.6014 18.26071,9.13036 -1.20017,0.60008 -18.26071,-9.13035 z m 0,1.64699 18.26071,9.13035 -1.20017,0.60008 -18.26071,-9.13035 z" />
+      <ellipse
+         style="fill:#ff0000;stroke-width:0.264583"
+         id="path1861-9-3"
+         cx="-116.94177"
+         cy="112.85809"
+         rx="0.42974886"
+         ry="0.42974883"
+         transform="scale(-1,1)" />
+      <ellipse
+         style="fill:#ff0000;stroke-width:0.264583"
+         id="path1861-3-4-9"
+         cx="-103.74991"
+         cy="106.25488"
+         rx="0.42974886"
+         ry="0.42974883"
+         transform="scale(-1,1)" />
+    </g>
+    <g
+       id="g2841"
+       transform="translate(0,52.916686)">
+      <polygon
+         id="polygon60"
+         points="363.14,279.67 463.14,329.67 563.14,279.67 463.14,229.67 "
+         class="cls-6"
+         style="fill:#32cd32;stroke:none;stroke-width:0.2507px;stroke-miterlimit:10"
+         transform="matrix(0.2638438,0,0,0.26384531,-95.738285,-7.6436634)" />
+      <path
+         id="polygon120-1"
+         style="fill:#a9a9a9;stroke:none;stroke-width:0.0661458;stroke-miterlimit:10;stroke-dasharray:none"
+         class="cls-10"
+         d="M 23.818184,54.27369 2.69906,64.83325 l 5.2658285,2.632914 5.2658285,2.632917 5.265828,2.632913 5.265829,2.632914 21.119124,-10.559563 -5.265828,-2.632914 -5.26583,-2.632914 -5.265827,-2.632913 z" />
+      <path
+         id="polygon120"
+         style="fill:#ffffff;stroke:none;stroke-width:0.0571932;stroke-miterlimit:10;stroke-dasharray:none"
+         class="cls-10"
+         d="m 39.510049,58.870253 -18.260711,9.130356 1.200163,0.60008 18.260711,-9.130354 z m 0,1.601409 -18.260711,9.130356 1.200163,0.60008 18.260711,-9.130354 z m 0,1.646985 -18.260711,9.130354 1.200163,0.600082 18.260711,-9.130356 z" />
+      <rect
+         style="fill:#e6e6e6;stroke-width:0.264583"
+         id="rect1678"
+         width="0.8504464"
+         height="7.8902526"
+         x="23.96316"
+         y="63.903687" />
+      <circle
+         style="fill:#ff0000;stroke-width:0.264583"
+         id="path1861"
+         cx="24.392908"
+         cy="64.095383"
+         r="0.42974886" />
+      <rect
+         style="fill:#e6e6e6;stroke-width:0.264583"
+         id="rect1678-9"
+         width="0.8504464"
+         height="7.8902526"
+         x="37.192329"
+         y="57.26548" />
+      <circle
+         style="fill:#ff0000;stroke-width:0.264583"
+         id="path1861-3"
+         cx="37.584778"
+         cy="57.492172"
+         r="0.42974886" />
+    </g>
+    <g
+       id="g2832"
+       transform="translate(0,52.916686)">
+      <polygon
+         id="polygon60-3"
+         points="463.14,329.67 563.14,279.67 463.14,229.67 363.14,279.67 "
+         class="cls-6"
+         style="fill:#32cd32;stroke:none;stroke-width:0.2507px;stroke-miterlimit:10"
+         transform="matrix(-0.2638438,0,0,0.26384531,228.03008,-7.643663)" />
+      <path
+         id="polygon120-1-9"
+         style="fill:#a9a9a9;stroke:none;stroke-width:0.0661458;stroke-miterlimit:10;stroke-dasharray:none"
+         class="cls-10"
+         d="m 108.47361,54.27369 21.11913,10.55956 -5.26583,2.632914 -5.26583,2.632917 -5.26583,2.632913 -5.26583,2.632914 -21.119121,-10.559563 5.265828,-2.632914 5.26583,-2.632914 5.265823,-2.632913 z" />
+      <path
+         id="polygon120-99"
+         style="fill:#ffffff;stroke:none;stroke-width:0.0571932;stroke-miterlimit:10;stroke-dasharray:none"
+         class="cls-10"
+         d="m 92.781748,58.870253 18.260712,9.130356 -1.20016,0.60008 -18.260715,-9.130354 z m 0,1.601409 18.260712,9.130356 -1.20016,0.60008 -18.260715,-9.130354 z m 0,1.646985 18.260712,9.130354 -1.20016,0.600082 -18.260715,-9.130356 z" />
+      <rect
+         style="fill:#e6e6e6;stroke-width:0.264583"
+         id="rect1678-1"
+         width="0.8504464"
+         height="7.8902526"
+         x="-108.32864"
+         y="63.903687"
+         transform="scale(-1,1)" />
+      <circle
+         style="fill:#ff0000;stroke-width:0.264583"
+         id="path1861-1"
+         cx="-107.89889"
+         cy="64.095383"
+         r="0.42974886"
+         transform="scale(-1,1)" />
+      <rect
+         style="fill:#e6e6e6;stroke-width:0.264583"
+         id="rect1678-9-5"
+         width="0.8504464"
+         height="7.8902526"
+         x="-95.099464"
+         y="57.26548"
+         transform="scale(-1,1)" />
+      <circle
+         style="fill:#ff0000;stroke-width:0.264583"
+         id="path1861-3-8"
+         cx="-94.707016"
+         cy="57.492172"
+         r="0.42974886"
+         transform="scale(-1,1)" />
+    </g>
+  </g>
+</svg>

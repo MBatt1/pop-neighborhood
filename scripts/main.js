@@ -195,24 +195,37 @@ function populateTiles() {
     
 	
 	
-    var upLeftRoad = [3, 6, 8, 9, 11, 12, 13];
-    var upLeftGrass = [0, 1, 2, 4, 5, 7, 10];
-    var upRightRoad = [4, 5, 8, 9, 10, 12, 13];
-    var upRightGrass = [0, 1, 2, 3, 6, 7, 11];
+    var upLeftRoad = [3, 20, 22, 6, 8, 9, 11, 12, 13, 18];
+    var upLeftGrass = [0, 24, 25, 26, 27, 1, 2, 14, 15, 28, 29, 4, 21, 23, 5, 7, 10, 16, 17, 19];
+    var upRightRoad = [4, 21, 23, 5, 8, 9, 10, 12, 13, 19];
+    var upRightGrass = [0, 24, 25, 26, 27, 1, 2, 14, 15, 28, 29, 3, 20, 22, 6, 7, 11, 16, 17, 18];
     
-    var downLeftRoad = [4, 6, 7, 9, 10, 11, 12];
-    var downLeftGrass = [0, 1, 2, 3, 5, 8, 13];
-    var downRightRoad = [3, 5, 7, 9, 10, 11, 13];
-    var downRightGrass = [0, 1, 2, 4, 6, 8, 12];
+    var downLeftRoad = [4, 21, 23, 6, 7, 9, 10, 11, 12, 17];
+    var downLeftGrass = [0, 24, 25, 26, 27, 1, 2, 14, 15, 28, 29, 3, 20, 22, 5, 8, 13, 16, 18, 19];
+    var downRightRoad = [3, 20, 22, 5, 7, 9, 10, 11, 13, 16];
+    var downRightGrass = [0, 24, 25, 26, 27, 1, 2, 14, 15, 28, 29, 4, 21, 23, 6, 8, 12, 17, 18, 19];
     
     
     
     tiles[0] = createImage("0_blank_tile", {u1:upLeftGrass, u2:upRightGrass, d1:downLeftGrass, d2:downRightGrass});
+    tiles[24] = createImage("24_blank_tile", {u1:upLeftGrass, u2:upRightGrass, d1:downLeftGrass, d2:downRightGrass});
+    tiles[25] = createImage("25_blank_tile", {u1:upLeftGrass, u2:upRightGrass, d1:downLeftGrass, d2:downRightGrass});
+    tiles[26] = createImage("26_blank_tile", {u1:upLeftGrass, u2:upRightGrass, d1:downLeftGrass, d2:downRightGrass});
+    tiles[27] = createImage("27_blank_tile", {u1:upLeftGrass, u2:upRightGrass, d1:downLeftGrass, d2:downRightGrass});
+	
     tiles[1] = createImage("1_house_tile", {u1:upLeftGrass, u2:upRightGrass, d1:downLeftGrass, d2:downRightGrass});
     tiles[2] = createImage("2_house2_tile", {u1:upLeftGrass, u2:upRightGrass, d1:downLeftGrass, d2:downRightGrass});
+    tiles[14] = createImage("14_house_tile", {u1:upLeftGrass, u2:upRightGrass, d1:downLeftGrass, d2:downRightGrass});
+    tiles[15] = createImage("15_house2_tile", {u1:upLeftGrass, u2:upRightGrass, d1:downLeftGrass, d2:downRightGrass});
+    tiles[28] = createImage("28_house_tile", {u1:upLeftGrass, u2:upRightGrass, d1:downLeftGrass, d2:downRightGrass});
+    tiles[29] = createImage("29_house2_tile", {u1:upLeftGrass, u2:upRightGrass, d1:downLeftGrass, d2:downRightGrass});
     
     tiles[3] = createImage("3_straight_road_1_tile", {u1: upLeftRoad, u2:upRightGrass, d1:downLeftGrass, d2:downRightRoad});  // 
     tiles[4] = createImage("4_straight_road_2_tile", {u1: upLeftGrass, u2:upRightRoad, d1:downLeftRoad, d2:downRightGrass});  // /
+    tiles[20] = createImage("20_crosswalk_road_tile", {u1: upLeftRoad, u2:upRightGrass, d1:downLeftGrass, d2:downRightRoad});  // 
+    tiles[21] = createImage("21_crosswalk_road_tile", {u1: upLeftGrass, u2:upRightRoad, d1:downLeftRoad, d2:downRightGrass});  // /
+    tiles[22] = createImage("22_crosswalk_road_tile", {u1: upLeftRoad, u2:upRightGrass, d1:downLeftGrass, d2:downRightRoad});  // 
+    tiles[23] = createImage("23_crosswalk_road_tile", {u1: upLeftGrass, u2:upRightRoad, d1:downLeftRoad, d2:downRightGrass});  // /
     
     tiles[5] = createImage("5_curved_road_1_tile", {u1: upLeftRoad, u2:upRightGrass, d1:downLeftRoad, d2:downRightGrass});    // >
     tiles[6] = createImage("6_curved_road_2_tile", {u1: upLeftGrass, u2:upRightRoad, d1:downLeftGrass, d2:downRightRoad});    // <
@@ -225,6 +238,11 @@ function populateTiles() {
     tiles[11] = createImage("11_t_road_2_tile", {u1: upLeftRoad, u2:upRightRoad, d1:downLeftGrass, d2:downRightRoad});  //
     tiles[12] = createImage("12_t_road_3_tile", {u1: upLeftGrass, u2:upRightRoad, d1:downLeftRoad, d2:downRightRoad});  //
     tiles[13] = createImage("13_t_road_4_tile", {u1: upLeftRoad, u2:upRightGrass, d1:downLeftRoad, d2:downRightRoad});  //
+	
+	tiles[16] = createImage("16_dead_end_road_tile", {u1: [3, 20, 22, 6, 8, 9, 11, 12, 13], u2:upRightGrass, d1:downLeftGrass, d2:downRightGrass});
+	tiles[17] = createImage("17_dead_end_road_tile", {u1: upLeftGrass, u2:[4, 21, 23, 5, 8, 9, 10, 12, 1], d1:downLeftGrass, d2:downRightGrass});
+	tiles[18] = createImage("18_dead_end_road_tile", {u1: upLeftGrass, u2:upRightGrass, d1:downLeftGrass, d2:[3, 20, 22, 5, 7, 9, 10, 11, 13]});
+	tiles[19] = createImage("19_dead_end_road_tile", {u1: upLeftGrass, u2:upRightGrass, d1:[4, 21, 23, 6, 7, 9, 10, 11, 12], d2:downRightGrass});
     
     tiles[99] = createImage("bad_tile", {u1:[], u2:[], d1:[], d2:[]});
 }
