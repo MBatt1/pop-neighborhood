@@ -193,15 +193,17 @@ function getTile(fromGrid, coords) {
 // {u1:[], u2:[], d1:[], d2:[]}
 function populateTiles() {
     
-    var upLeftRoad = [3, 6, 8, 9];
-    var upLeftGrass = [0, 1, 2, 4, 5, 7];
-    var upRightRoad = [4, 5, 8, 9];
-    var upRightGrass = [0, 1, 2, 3, 6, 7];
+	
+	
+    var upLeftRoad = [3, 6, 8, 9, 11, 12, 13];
+    var upLeftGrass = [0, 1, 2, 4, 5, 7, 10];
+    var upRightRoad = [4, 5, 8, 9, 10, 12, 13];
+    var upRightGrass = [0, 1, 2, 3, 6, 7, 11];
     
-    var downLeftRoad = [4, 6, 7, 9];
-    var downLeftGrass = [0, 1, 2, 3, 5, 8];
-    var downRightRoad = [3, 5, 7, 9];
-    var downRightGrass = [0, 1, 2, 4, 6, 8];
+    var downLeftRoad = [4, 6, 7, 9, 10, 11, 12];
+    var downLeftGrass = [0, 1, 2, 3, 5, 8, 13];
+    var downRightRoad = [3, 5, 7, 9, 10, 11, 13];
+    var downRightGrass = [0, 1, 2, 4, 6, 8, 12];
     
     
     
@@ -219,10 +221,10 @@ function populateTiles() {
     
     tiles[9] = createImage("9_fourway_road_tile", {u1: [3, 6, 8], u2:[4, 5, 8], d1:[4, 6, 7], d2:[3, 5, 7]});  // /
     
-    tiles[10] = createImage("10_t_road_1_tile", {u1: upLeftRoad, u2:upRightGrass, d1:downLeftRoad, d2:downRightGrass});  //
-    tiles[11] = createImage("11_t_road_2_tile", {u1: upLeftGrass, u2:upRightRoad, d1:downLeftGrass, d2:downRightRoad});  //
-    tiles[12] = createImage("12_t_road_3_tile", {u1: upLeftRoad, u2:upRightRoad, d1:downLeftGrass, d2:downRightGrass});  //
-    tiles[13] = createImage("13_t_road_4_tile", {u1: upLeftGrass, u2:upRightGrass, d1:downLeftRoad, d2:downRightRoad});  //
+    tiles[10] = createImage("10_t_road_1_tile", {u1: upLeftRoad, u2:upRightRoad, d1:downLeftRoad, d2:downRightGrass});  //
+    tiles[11] = createImage("11_t_road_2_tile", {u1: upLeftRoad, u2:upRightRoad, d1:downLeftGrass, d2:downRightRoad});  //
+    tiles[12] = createImage("12_t_road_3_tile", {u1: upLeftGrass, u2:upRightRoad, d1:downLeftRoad, d2:downRightRoad});  //
+    tiles[13] = createImage("13_t_road_4_tile", {u1: upLeftRoad, u2:upRightGrass, d1:downLeftRoad, d2:downRightRoad});  //
     
     tiles[99] = createImage("bad_tile", {u1:[], u2:[], d1:[], d2:[]});
 }
