@@ -33,7 +33,7 @@ function fillGrid() {
 	grid[startY][startX] = 0;
     
    
-    ticker = setInterval(advanceDraw, 100);
+    ticker = setInterval(advanceDraw, 50);
     
 };
 
@@ -43,8 +43,6 @@ function advanceDraw() {
         var frontTile = tiles[grid[front.y][front.x]];
         if (!frontTile) {
             grid[front.y][front.x] = 99;
-            //clearInterval(ticker);
-            //ticker = null;
             drawGrid();
             return;
         }
@@ -109,7 +107,15 @@ function advanceDraw() {
 		frontier.sort(() => Math.random() - 0.5);
 		
 		drawGrid();
+    } else {
+        clearInterval(ticker);
+        setTimeout(reset, 5000);
     }
+}
+
+function reset() {
+    ctx.clearRect(0, 0, canvas.width*2, canvas.height*2)
+    fillGrid()
 }
 
 function tileFits(coords, tileIndex) {
