@@ -26,8 +26,8 @@ function fillGrid() {
         grid[yPlace] = temp;
     }
     
-    var startX = Math.floor(Math.random() * screenTileWidth);
-    var startY = Math.floor(Math.random() * screenTileHeight);
+    var startX = Math.floor((Math.random() * screenTileWidth-6)+3);
+    var startY = Math.floor((Math.random() * screenTileHeight-6)+3);
 
     frontier = [{x:startX, y:startY}]
 	grid[startY][startX] = 0;
@@ -42,7 +42,7 @@ function advanceDraw() {
         var front = frontier.pop();
         var frontTile = tiles[grid[front.y][front.x]];
         if (!frontTile) {
-            grid[front.y][front.x] = 99;
+            grid[front.y][front.x] = 0;
             drawGrid();
             return;
         }
